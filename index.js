@@ -3,6 +3,37 @@ const morgan = require('morgan');
 
 const app = express();
 
+let topMovies = [ {
+  title: 'The Notebook'
+},
+{
+  title: 'The Nightmare Before Christmas'
+},
+{
+  title: 'Call Me By Your Name'
+},
+{
+  title: 'Kill Bill'
+},
+{
+  title: 'The Conjuring'
+},
+{
+  title: 'Psycho'
+},
+{
+  title: 'Eternal Sunshine Of The Spotless Mind'
+},
+{
+  title: 'The Shining'
+},
+{
+  title: 'Jaws'
+},
+{
+  title: 'mother!'
+} ]
+
 app.use(morgan('common'));
 
 // GET requests
